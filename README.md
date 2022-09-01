@@ -1139,3 +1139,9 @@ const App: () => React$Node = () => {
 
 export default App;
 ```
+
+# Credits
+
+[iamacup](https://github.com/iamacup), [Mient-jan Stelling](https://github.com/mientjan) + Community for contributions.
+
+This codebase was extracted from [react-native-markdown-display](https://github.com/iamacup/react-native-markdown-display), unfortunately, it is not actively maintained anymore, therefore, we decided to continue developing on our end.
