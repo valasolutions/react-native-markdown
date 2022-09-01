@@ -1,4 +1,4 @@
-# React Native Markdown Display
+# React Native Markdown
 
 It a 100% compatible CommonMark renderer, a react-native markdown renderer done right. This is **not** a web-view markdown renderer but a renderer that uses native components for all its elements. These components can be overwritten and styled as needed.
 
