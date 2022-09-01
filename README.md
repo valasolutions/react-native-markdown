@@ -2,6 +2,12 @@
 
 It a 100% compatible CommonMark renderer, a react-native markdown renderer done right. This is **not** a web-view markdown renderer but a renderer that uses native components for all its elements. These components can be overwritten and styled as needed.
 
+### Credits
+
+[iamacup](https://github.com/iamacup), [Mient-jan Stelling](https://github.com/mientjan) + Community for contributions.
+
+This codebase was extracted from [react-native-markdown-display](https://github.com/iamacup/react-native-markdown-display), unfortunately, it is not actively maintained anymore, therefore, we decided to continue developing on our end.
+
 ### Install
 
 #### Yarn
@@ -1139,9 +1145,3 @@ const App: () => React$Node = () => {
 
 export default App;
 ```
-
-# Credits
-
-[iamacup](https://github.com/iamacup), [Mient-jan Stelling](https://github.com/mientjan) + Community for contributions.
-
-This codebase was extracted from [react-native-markdown-display](https://github.com/iamacup/react-native-markdown-display), unfortunately, it is not actively maintained anymore, therefore, we decided to continue developing on our end.
