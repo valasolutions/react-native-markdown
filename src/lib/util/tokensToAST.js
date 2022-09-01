@@ -1,5 +1,5 @@
-import getUniqueID from './getUniqueID';
-import getTokenTypeByToken from './getTokenTypeByToken';
+import getUniqueID from "./getUniqueID";
+import getTokenTypeByToken from "./getTokenTypeByToken";
 
 /**
  *
@@ -16,7 +16,7 @@ function createNode(token, tokenIndex) {
   if (token.attrs) {
     attributes = token.attrs.reduce((prev, curr) => {
       const [name, value] = curr;
-      return {...prev, [name]: value};
+      return { ...prev, [name]: value };
     }, {});
   }
 
@@ -27,7 +27,7 @@ function createNode(token, tokenIndex) {
     sourceMeta: token.meta,
     block: token.block,
     markup: token.markup,
-    key: getUniqueID() + '_' + type,
+    key: getUniqueID() + "_" + type,
     content,
     tokenIndex,
     index: 0,
@@ -55,9 +55,9 @@ export default function tokensToAST(tokens) {
 
     if (
       !(
-        astNode.type === 'text' &&
+        astNode.type === "text" &&
         astNode.children.length === 0 &&
-        astNode.content === ''
+        astNode.content === ""
       )
     ) {
       astNode.index = children.length;

@@ -1,8 +1,8 @@
-import tokensToAST from './util/tokensToAST';
-import {stringToTokens} from './util/stringToTokens';
-import {cleanupTokens} from './util/cleanupTokens';
-import groupTextTokens from './util/groupTextTokens';
-import omitListItemParagraph from './util/omitListItemParagraph';
+import tokensToAST from "./util/tokensToAST";
+import { stringToTokens } from "./util/stringToTokens";
+import { cleanupTokens } from "./util/cleanupTokens";
+import groupTextTokens from "./util/groupTextTokens";
+import omitListItemParagraph from "./util/omitListItemParagraph";
 
 /**
  *
