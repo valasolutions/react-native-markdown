@@ -13,7 +13,7 @@ yarn add @valasolutions/react-native-markdown
 #### NPM
 
 ```npm
-npm install -S @valasolutions/react-native-markdown
+npm install @valasolutions/react-native-markdown
 ```
 
 ### Get Started
