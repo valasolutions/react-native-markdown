@@ -1,8 +1,3 @@
-/**
- * Base Markdown component
- * @author Mient-jan Stelling + contributors
- */
-
 import React, { memo, useMemo } from "react";
 import { Text, StyleSheet } from "react-native";
 import parser from "./lib/parser";
@@ -19,18 +14,21 @@ import { stringToTokens } from "./lib/util/stringToTokens";
 import FitImage from "react-native-fit-image";
 import textStyleProps from "./lib/data/textStyleProps";
 
+// TODO: Add prop for customizing link colors
+// TODO: Improve handling images
+
 export {
   getUniqueID,
   openUrl,
   hasParents,
-  renderRules,
-  AstRenderer,
   parser,
   stringToTokens,
   tokensToAST,
-  MarkdownIt,
-  styles,
   removeTextStyleProps,
+  renderRules,
+  styles,
+  AstRenderer,
+  MarkdownIt,
   FitImage,
   textStyleProps,
 };

@@ -60,14 +60,14 @@ export default App;
 
 The `<Markdown>` object takes the following common props:
 
-| Property         | Default                                                                                                      | Required | Description                                                                                                            |
-| ---------------- | ------------------------------------------------------------------------------------------------------------ | -------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `children`       | N/A                                                                                                          | `true`   | The markdown string to render, or the [pre-processed tree](#pre-processing)                                            |
-| `style`          | [source](https://github.com/iamacup/@valasolutions/react-native-markdown/blob/master/src/lib/styles.js)      | `false`  | An object to override the styling for the various rules, [see style section below](#rules-and-styles) for more info    |
-| `mergeStyle`     | `true`                                                                                                       | `false`  | If true, when a style is supplied, the individual items are merged with the default styles instead of overwriting them |
-| `rules`          | [source](https://github.com/iamacup/@valasolutions/react-native-markdown/blob/master/src/lib/renderRules.js) | `false`  | An object of rules that specify how to render each markdown item, [see rules section below](#rules) for more info      |
-| `onLinkPress`    | `import { Linking } from 'react-native';` and `Linking.openURL(url);`                                        | `false`  | A handler function to change click behaviour, [see handling links section below](#handling-links) for more info        |
-| `debugPrintTree` | `false`                                                                                                      | `false`  | Will print the AST tree to the console to help you see what the markdown is being translated to                        |
+| Property         | Default                                                                                           | Required | Description                                                                                                            |
+| ---------------- | ------------------------------------------------------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `children`       | N/A                                                                                               | `true`   | The markdown string to render, or the [pre-processed tree](#pre-processing)                                            |
+| `style`          | [source](https://github.com/valasolutions/react-native-markdown/blob/main/src/lib/styles.js)      | `false`  | An object to override the styling for the various rules, [see style section below](#rules-and-styles) for more info    |
+| `mergeStyle`     | `true`                                                                                            | `false`  | If true, when a style is supplied, the individual items are merged with the default styles instead of overwriting them |
+| `rules`          | [source](https://github.com/valasolutions/react-native-markdown/blob/main/src/lib/renderRules.js) | `false`  | An object of rules that specify how to render each markdown item, [see rules section below](#rules) for more info      |
+| `onLinkPress`    | `import { Linking } from 'react-native';` and `Linking.openURL(url);`                             | `false`  | A handler function to change click behaviour, [see handling links section below](#handling-links) for more info        |
+| `debugPrintTree` | `false`                                                                                           | `false`  | Will print the AST tree to the console to help you see what the markdown is being translated to                        |
 
 And some additional, less used options:
 
@@ -94,9 +94,9 @@ And some additional, less used options:
   ###### h6 Heading
 ```
 
-| iOS                                                                                                          | Android                                                                                                          |
-| ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/ios-1.png"/> | <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/android-1.png"/> |
+| iOS                                                                                               | Android                                                                                               |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/ios-1.png"/> | <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/android-1.png"/> |
 
 </p>
 </details>
@@ -115,9 +115,9 @@ And some additional, less used options:
   Some text below
 ```
 
-| iOS                                                                                                          | Android                                                                                                          |
-| ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/ios-2.png"/> | <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/android-2.png"/> |
+| iOS                                                                                               | Android                                                                                               |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/ios-2.png"/> | <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/android-2.png"/> |
 
 </p>
 </details>
@@ -137,9 +137,9 @@ And some additional, less used options:
   ~~Strikethrough~~
 ```
 
-| iOS                                                                                                          | Android                                                                                                          |
-| ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/ios-4.png"/> | <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/android-4.png"/> |
+| iOS                                                                                               | Android                                                                                               |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/ios-4.png"/> | <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/android-4.png"/> |
 
 </p>
 </details>
@@ -153,9 +153,9 @@ And some additional, less used options:
   > > > ...or with spaces between arrows.
 ```
 
-| iOS                                                                                                          | Android                                                                                                          |
-| ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/ios-5.png"/> | <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/android-5.png"/> |
+| iOS                                                                                               | Android                                                                                               |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/ios-5.png"/> | <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/android-5.png"/> |
 
 </p>
 </details>
@@ -186,9 +186,9 @@ And some additional, less used options:
   58. bar
 ```
 
-| iOS                                                                                                          | Android                                                                                                          |
-| ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/ios-6.png"/> | <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/android-6.png"/> |
+| iOS                                                                                               | Android                                                                                               |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/ios-6.png"/> | <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/android-6.png"/> |
 
 </p>
 </details>
@@ -226,7 +226,7 @@ console.log(foo(5));
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/ios-7.png"/>  | <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/android-7.png"/>
+| <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/ios-7.png"/>  | <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/android-7.png"/>
 
 </p>
 </details>
@@ -255,7 +255,7 @@ Right aligned columns
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/ios-8.png"/>  | <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/android-8.png"/>
+| <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/ios-8.png"/>  | <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/android-8.png"/>
 
 </p>
 </details>
@@ -275,7 +275,7 @@ Autoconverted link https://www.google.com (enable linkify to see)
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/ios-9.png"/>  | <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/android-9.png"/>
+| <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/ios-9.png"/>  | <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/android-9.png"/>
 
 </p>
 </details>
@@ -300,7 +300,7 @@ With a reference later in the document defining the URL location:
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/ios-10.png"/>  | <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/android-10.png"/>
+| <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/ios-10.png"/>  | <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/android-10.png"/>
 
 </p>
 </details>
@@ -325,7 +325,7 @@ test.. test... test..... test?..... test!....
 
 | iOS | Android
 | --- | ---
-| <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/ios-3.png"/>  | <img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/android-3.png"/>
+| <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/ios-3.png"/>  | <img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/android-3.png"/>
 
 </p>
 </details>
@@ -721,7 +721,7 @@ Think of the implementation like applying styles in CSS. changes to the `body` e
 <details><summary>Example</summary>
 <p>
 
-<img src="https://github.com/iamacup/@valasolutions/react-native-markdown/raw/master/doc/images/style-example.png"/>
+<img src="https://github.com/valasolutions/react-native-markdown/raw/main/doc/images/style-example.png"/>
 
 ```jsx
 import React from "react";
@@ -779,7 +779,7 @@ export default App;
 
 ### Styles
 
-Styles are used to override how certain rules are styled. The existing implementation is [here](https://github.com/iamacup/@valasolutions/react-native-markdown/blob/master/src/lib/styles.js)
+Styles are used to override how certain rules are styled. The existing implementation is [here](https://github.com/valasolutions/react-native-markdown/blob/main/src/lib/styles.js)
 
 **NOTE:** By default styles are merged with the existing implementation, to change this, see the `mergeStyle` prop
 
@@ -851,7 +851,7 @@ export default App;
 
 ### Rules
 
-Rules are used to specify how you want certain elements to be displayed. The existing implementation is [here](https://github.com/iamacup/@valasolutions/react-native-markdown/blob/master/src/lib/renderRules.js)
+Rules are used to specify how you want certain elements to be displayed. The existing implementation is [here](https://github.com/valasolutions/react-native-markdown/blob/main/src/lib/renderRules.js)
 
 <details><summary>Example Implementation</summary>
 <p>
@@ -969,7 +969,7 @@ import { SafeAreaView, ScrollView, StatusBar } from "react-native";
 
 import Markdown from "@valasolutions/react-native-markdown";
 
-const copy = `[This is a link!](https://github.com/iamacup/@valasolutions/react-native-markdown/)`;
+const copy = `[This is a link!](https://github.com/valasolutions/react-native-markdown)`;
 
 const onLinkPress = (url) => {
   if (url) {
@@ -1007,7 +1007,7 @@ export default App;
 <details><summary>Using a Custom Rule</summary>
 <p>
 
-You will need to overwrite one or both of `link` and `blocklink`, the original defenitions can be [found here](https://github.com/iamacup/@valasolutions/react-native-markdown/blob/master/src/lib/renderRules.js)
+You will need to overwrite one or both of `link` and `blocklink`, the original defenitions can be [found here](https://github.com/valasolutions/react-native-markdown/blob/main/src/lib/renderRules.js)
 
 Something like this with `yourCustomHandlerFunctionOrLogicHere`:
 
@@ -1017,7 +1017,7 @@ import { SafeAreaView, ScrollView, StatusBar, Text } from "react-native";
 
 import Markdown from "@valasolutions/react-native-markdown";
 
-const copy = `[This is a link!](https://github.com/iamacup/@valasolutions/react-native-markdown/)`;
+const copy = `[This is a link!](https://github.com/valasolutions/react-native-markdown)`;
 
 const rules = {
   link: (node, children, parent, styles) => {
@@ -1105,7 +1105,7 @@ A full list of things you can turn off is [here](https://github.com/markdown-it/
 
 ### Pre Processing
 
-It is possible to need to pre-process the data outside of this library ([related discussion here](https://github.com/iamacup/@valasolutions/react-native-markdown/issues/79)). As a result, you can pass an AST tree directly as the children like this:
+It is possible to need to pre-process the data outside of this library. As a result, you can pass an AST tree directly as the children like this:
 
 ```jsx
 import React from "react";
